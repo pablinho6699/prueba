@@ -13,4 +13,5 @@ RUN mkdir /proyecto
 RUN cd /proyecto
 RUN git clone https://github.com/pablinho6699/corcubion-pagina
 WORKDIR /code/corcubion-pagina/corcu
+EXPOSE      8000
 RUN python manage.py runserver 0.0.0.0:8000 &
